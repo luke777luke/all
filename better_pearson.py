@@ -1,4 +1,4 @@
-#comparison of Pearson Correlation Coeffienct algorithms for time efficiency
+#comparison of Pearson Correlation Coefficient algorithms for time efficiency
 
 import time
 import numpy as np
@@ -61,9 +61,9 @@ for i in range(1000):
 tic2 = time.time()-tic
 print(f'Using the built in function, the time it takes to calculate the correlation between two 1D random arrays 1000 times over is {tic2} seconds.')
 
-#additionally, check to confirm the accuracy of calculating the Pearson Correlation Coeffienct by comparing the first two functions with the results of the built in NumPy function
+#additionally, check to confirm the accuracy of calculating the Pearson Correlation Coefficient by comparing the first two functions with the results of the built in NumPy function
 veca = np.random.randn(500)
 vecb = np.random.randn(500)
 print(f'If the resulting value of the first function ({corr(veca,vecb).round(5)}) and second function ({corr2(veca,vecb).round(5)})  match the value of the built-in function ({corr3(veca,vecb).round(5)}), then accuracy is preserved.')
 
-print(f'The most time efficiient algoritm  is  the one using linear algebraic functions.')
+print(f'The most time efficient algorithm  is  the one using linear algebraic functions.')
